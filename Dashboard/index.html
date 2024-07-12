@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="content/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="content/css/font-family.css">
+    <link rel="stylesheet" href="content/lib/css/flatpickr.min.css">
+    <link rel="stylesheet" href="content/lib/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="content/css/style.css">
+    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand m-0" href="#">
+            <img src="content/images/BHlogo_horizontal_primary@2x 1.png" alt="logo" height="45" width="131">
+            <img src="content/images/OMS.png" alt="OMS logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="nav-search">
+              <img src="content/images/icon/Search.svg" alt="Search">
+              <img src="content/images/MoreVertFilled.png" alt="More options">
+              <img src="content/images/Avatar.png" alt="Avatar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="banner-part">
+      <div class="container-fluid">
+        <div class="row g-4">
+          <div class="col-md-2">
+            <div class="icons flex-row flex-md-column">
+              <a href="#">
+                <img src="content/images/icon/Back_Button.svg" alt="Button"
+              /></a>
+              <a href="#"> <img src="content/images/icon/Home.svg" alt="home" /></a>
+              <a href="#"> <img src="content/images/icon/Order.svg" alt="order" /></a>
+              <a href="#">
+                <img src="content/images/icon/Accounts.svg" alt="Accounts"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-lg-8 d-flex">
+                <div class="mainbox">
+                <div class="tophead">
+                  <h3>Name of Campaign</h3>
+                  <p>Month Day,Year to Month Day,Year (-XX) days</p>
+                  <p>Objective Brief Description of Campaign</p>
+                  </div>
+                  <div class="row gx-2">
+                    <div class="col-6 col-md-4 d-flex">
+                      <div class="mdlbox">
+                        <p>Seller: email@bighappy.co</p>
+                        <p>Trader: email@bighappy.co</p>
+                        <p>AM: email@bighappy.co</p>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex">
+                      <div class="mdlbox">
+                        <p>PROGRAMMATIC</p>
+                        <p>DSP: The Trade Desk</p>
+                        <p>SSP:Xandr Curate(xxxxxxx,xxxxxxx)</p>
+                      </div>
+                    </div>
+                        <div class="col-6 col-md-2 d-flex">
+                      <div class="mdlbox">
+                        <p>Billing Audit:NA</p>
+                      </div>
+                    </div>
+                        <div class="col-6 col-md-2 d-flex">
+                      <div class="mdlbox">
+                        <p>Seat ID:XXX</p>
+
+                      </div>
+                    </div>
+                  </div>
+                 <div class="mnbtmbx">
+                  <div class="row gx-0">
+                    <div class="col-4 col-sm-4 col-md-4 d-flex">
+                      <div class="btmbox">
+                    <p>Primary KPI: </p>
+                    <p>CTR</p>
+                  </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 d-flex">
+                       <div class="btmbox bdrn">
+                        <p>Secondary KPI:</p>
+                  </div>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 d-flex">
+                       <div class="btmbox lst">
+                        <p>Attributiom:</p>
+                  </div>
+                    </div>
+                  </div>
+                 </div>
+                  <button class="btn btn-primary">EXPORT IOB</button>
+                  </div>
+                  </div>
+                  <div class="col-lg-4 d-flex">
+                    <div class="mainbox">
+                    <div class="pichart" id="chart">
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                    <div class="mainbox">
+                      <h6 class="mb-0">Impression (Estimated)</h6>
+                      <div class="linegraph" id="chartline1"></div>
+                      <div class="btmmdl">
+                       <div class="lftmdl">
+                        <h6 class="primary">1,036,668</h6>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                    <div class="mainbox">
+                      <h6>Earnings</h6>
+                      <div class="linegraph" id="chartline2"></div>
+                      <div class="btmmdl">
+                       <div class="lftmdl">
+                        <h6 class="primary">$ 9,902</h6>
+                        <p>Revenue (61.9%)</p>
+                       </div>
+                       <div class="rgtmdl">
+                        <h6 class="primary">$ 15,999.55</h6>
+                        <p>Total Budget</p>
+                       </div>
+                     
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                    <div class="mainbox">
+                      <p>Margin</p>
+                      <h5>49%</h5>
+                     <p>Cumulative Revenue</p>
+                      </div>
+                      </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                    <div class="mainbox">
+                      <p>Xender Revenue</p>
+                      <h5>$ 8611.04</h5>
+                     <p>Xender Cumulative Revenue</p>
+                  </div>
+                  </div>
+                  <div class="col-lg-3 d-flex">
+                    <div class="mainbox">
+                      <h6>D2D P%</h6>
+                      <div class="linsgrph" id="chartlinebtm51"></div>
+                      <p>(106%)</p>
+                      <h6>overall Projected</h6>
+                      <div class="linsgrph" id="chartlinebtm52"></div>
+                      <p>(92%)</p>
+                      <h6>overall Campaign p%</h6>
+                      <div class="linsgrph" id="chartlinered"></div>
+                      <p>(58%)</p>
+                      <h6>Time in Flight</h6>
+                      <div class="linsgrph" id="chartlinebtm54"></div>
+                      <p>(92%)</p>
+                      <h6>Daily Increased Needed</h6>
+                      <div class="linsgrph" id="chartlinebtm55"></div>
+                      <p>(87.40%)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="mainbox">
+              <div class="dotlinegraph">
+                <div class="d-flex align-items-lg-center justify-content-between flex-column flex-lg-row g-3">
+                  <div class="lftline mb-3 mb-lg-0">
+                    <span class="fil">Filter</span>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Daily 
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    CTR
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="rgtline mb-3 mb-lg-0">
+                    <button class="btn btn-primary">DOWNLOAD</button>
+                    <input type="date" id="datepicker1" placeholder="Start Date">
+                    
+                    <input type="date" id="datepicker2" placeholder="End Date">
+                  </div>
+                </div>
+                <div id="barWithDotsAndLine"></div>
+              </div>
+            </div>
+            <div class="mainbox">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+
+                  <h4 class="fil mb-0">Placement</h4>
+
+                    <button class="btn btn-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                      </svg>
+                      NEW</button>
+                </div>
+                <input type="text" placeholder="Search Records.." class="form-input mb-3 mb-lg-0">
+                </div>
+              </div>
+              <table id="data-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Rate</th>
+                    <th>Budget</th>
+                    <th>Revenue</th>
+                    <th>Estimated Impressions</th>
+                    <th>Impressions Served</th>
+                    <th>CTR</th>
+                    <th>Margin</th>
+                    <th>Margin Percentage</th>
+                    <th>Flight</th>
+                    <th>Name</th>
+                    <!-- Add more columns as needed -->
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ID:4356789</td>
+                    <td>Placement</td>
+                    <td>$9.75</td>
+                    <td>$17,000</td>
+                    <td></td>
+                    <td>1,743,590</td>
+                    <td></td>
+                    <td>0.45%</td>
+                    <td></td>
+                    <td>Aug 02,2023-sep 30,2023</td>
+                    <td>Flight</td>
+                    <td>Animated ?Sunrise</td>
+                   </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-end mb-3">
+                <div class="pegination">
+                  <span>Rows Per Page</span>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      10
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">20</a></li>
+                      <li><a class="dropdown-item" href="#">30</a></li>
+                      <li><a class="dropdown-item" href="#">50</a></li>
+                    </ul>
+                  </div>
+                  <span><span>1-1 0f 1</span>
+                 <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                  </svg>
+                  </a>
+                 <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                  </a>
+                </span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+
+                  <h4 class="fil mb-0">Creative Direction</h4>
+
+                    <button class="btn btn-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                      </svg>
+                      NEW</button>
+                </div>
+                </div>
+              </div>
+              <table id="data-table">
+                <thead>
+                  <tr>
+                    <th>Creative Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+               </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                   <td></td>
+                   <td></td>
+                   <td></td>
+                   </tr>
+                </tbody>
+              </table>
+              <div class="d-flex justify-content-end mb-3">
+                <div class="pegination">
+                  <span>Rows Per Page</span>
+                  <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      10
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">20</a></li>
+                      <li><a class="dropdown-item" href="#">30</a></li>
+                      <li><a class="dropdown-item" href="#">50</a></li>
+                    </ul>
+                  </div>
+                  <span><span>1-1 0f 1</span>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                  </svg>
+                  </a>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                  </svg>
+                  </a>
+                </span>
+                </div>
+              </div>
+            </div>
+            </div>
+          
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <script src="content/lib/js/jquery.min.js"></script>
+    <script src="content/lib/js/popper.min.js"></script>
+    <script src="content/bootstrap/js/bootstrap.min.js"></script>
+    <script src="content/lib/js/flatpicker.js"></script>
+    <script src="content/lib/js/jquery.datatable.js"></script>
+    <script src="content/lib/js/chart.js"></script>
+    <script src="content/js/custom.js"></script>
+    
+
+<!-- Initialize DataTable and Flatpickr -->
+<!-- <script>
+  $(document).ready(function() {
+    $('#data-table').DataTable();
+    
+    $(document).ready(function() {
+    flatpickr("#datepicker1", {
+      dateFormat: "Y-m-d"
+    });
+    
+    flatpickr("#datepicker2", {
+      dateFormat: "Y-m-d"
+    });
+  });
+  });
+</script> -->
+
+
+  </body>
+</html>

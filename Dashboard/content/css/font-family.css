@@ -1,0 +1,29 @@
+/* Overpass font family */
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/overpass/Overpass-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/overpass/Overpass-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/overpass/Overpass-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Overpass";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/overpass/Overpass-Bold.ttf") format("truetype");
+  font-display: swap;
+}

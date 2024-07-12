@@ -1,0 +1,534 @@
+:root {
+  --bs-primary: #2a3c73;
+  --bs-secondary: #444444;
+  --bs-heading: #333333;
+  --bs-para: #595657;
+  --bs-border-color: #e8e8e8;
+  --bs-root-font-size: 16px;
+  --bs-body-font-family: "Overpass", sans-serif;
+}
+
+  
+  .bi,
+  .btn,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  :after,
+  :before,
+  a,
+  button,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  img,
+  input,
+  li,
+  p,
+  select,
+  span,
+  textarea {
+    transition: 0.5s ease-out;
+  }
+  p{
+    color:var(--bs-secondary);
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  ul li {
+    list-style: none;
+    color: var(--bs-primary);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    overflow-x: hidden;
+    font-size: 16px;
+    position: inherit !important;
+  }
+  
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    line-height: 1.35;
+    color: var(--bs-primary);
+  }
+  
+  .btn {
+    padding: 0.5rem 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    transition: all 0.25s;
+    border-radius: 0.35rem;
+    height: 37.72px;
+    font-weight: 600;
+    gap:0.5rem;
+  }
+  
+  .btn-secondary-fill {
+    background: var(--bs-secondary);
+    border: 1px solid var(--bs-secondary);
+    color: #fff;
+  }
+  .btn-secondary-fill:hover, .btn-secondary-fill:focus, .btn-secondary-fill:focus-visible {
+    background: transparent;
+    border: 1px solid var(--bs-secondary);
+    color: var(--bs-primary);
+    box-shadow:none;
+  }
+  
+  input::-moz-placeholder {
+    font-size: 0.85rem;
+    color: #000;
+  }
+  
+  input::placeholder {
+    font-size: 0.85rem;
+    color: #000;
+  }
+  
+  .form-group {
+    width: 100%;
+    border: 1px solid #e1e1e2;
+    border-radius: 0.25rem;
+    padding: 0.25rem 1rem;
+  }
+  .form-group::-moz-placeholder {
+    font-size: 1rem;
+    color: #aeb3b3;
+  }
+  .form-group::placeholder {
+    font-size: 1rem;
+    color: #aeb3b3;
+  }
+  .form-group::focus {
+    outline: none;
+    border: 1px solid var(--bs-primary);
+  }
+  
+  img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    max-width: 100%;
+  }
+  
+  .btn-primary {
+    color: #fff;
+    background-color: var(--bs-primary);
+    border: 1px solid var(--bs-primary);
+  }
+  
+  .btn-secondary {
+    color: var(--bs-secondary);
+    background-color: transparent;
+    border: 1px solid var(--bs-secondary);
+  }
+  .btn-secondary:hover {
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: var(--bs-secondary);
+    border-color: transparent;
+    transition: all 0.8s;
+  }
+  .btn-secondary:focus {
+    color: #fff;
+    background-color: var(--bs-secondary);
+    border-color: transparent;
+  }
+  
+  .btn-primary:hover, .btn-primary:focus {
+    color: #fff;
+    background-color: var(--bs-primary);
+    outline: 0;
+    box-shadow: none;
+    border-color: transparent;
+  }
+  
+  .btn-main:hover {
+    background: #fff;
+    color: var(--bs-secondary);
+  }
+  
+  .nav-item {
+    padding: 0 0.5rem;
+    color: rgba(51, 51, 51, 0.6784313725);
+    font-weight: 500;
+  }
+  .nav-item .nav-link {
+    padding: 0 0.5rem;
+    color: var(--bs-secondary);
+  }
+  
+  a:hover {
+    color: var(--bs-primary);
+    text-decoration: none;
+  }
+  
+  svg,
+  img {
+    vertical-align: middle;
+  }
+  
+  section,
+  footer {
+    padding: 25px 0;
+    overflow-x: hidden;
+  }
+  
+
+
+
+  .icons {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 18px -5px rgba(0, 0, 0, 0.15);
+    padding: 1rem ;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    }
+.mainbox{
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 26px -6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;
+    width:100%;
+    background:#fff;
+}
+.mainbox h6{
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+.mdlbox{
+    border: 1.5px solid #f0f0f0;
+    padding: 1rem 1.25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    width:100%;
+}
+.mdlbox p{
+    font-size: 0.675rem;
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+    width:100%;
+}
+#chart {
+    max-width: 600px;
+    width: 100%;
+  }
+  /* foreignObject{
+    height: 100% !important;
+  } */
+  .apexcharts-legend{
+    /* top: auto !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    display: flex !important;
+    flex-direction: row !important; */
+  }
+
+  .mnbtmbx{
+    border: 1.5px solid #f0f0f0;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  .mnbtmbx p{
+    margin-bottom: 0;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+  .btmbox{
+    padding: 0.5rem 0.65rem;
+    border-right: 1.5px solid #f0f0f0;
+    width: 100%;
+  }
+  .btmbox.lst{
+ border-right:0;
+  }
+  .tophead{
+    margin-bottom: 1.5rem;
+  }
+  .tophead h3{
+    font-size: 1.35rem;
+    margin-bottom: 0.25rem;
+  }
+  .tophead p{
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+
+  }
+  .btmmdl{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+  h6.primary{
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+  }
+  .lftmdl p,.rgtmdl p{
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+  .mainbox > p{
+    font-size: 0.75rem;
+    margin-bottom: 0.35rem;
+    color:var(--bs-primary);
+  }
+  .mainbox > h5{
+    margin-bottom: 0.35rem;
+  }
+
+  .linegraph,.linsgrph{
+    min-height: 20px !important;
+    height: 10px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .apexcharts-svg,foreignObject,#apexchartsz86boqff{
+    height:30px !important;
+  }
+  .apexcharts-inner{
+    transform:translate(0px ,9px) !important;
+  }
+  #apexcharts2stxy0g5,.apexcharts-canvas{
+    height: 20px !important;
+  }
+  #barWithDotsAndLine {
+    max-width: 100%;
+    width: 100%;
+    min-height: 320px !important;
+  }
+  #barWithDotsAndLine .apexcharts-canvas,#barWithDotsAndLine .apexcharts-svg,#barWithDotsAndLine foreignObject,#barWithDotsAndLine #apexchartsz86boqff{
+   height:320px !important
+  }
+  .pichart foreignObject,.pichart .apexcharts-svg,.pichart #apexchartsz86boqff{
+    height:130px !important;
+  }
+.lftline{
+    display: flex;
+    align-items:center;
+    gap:1rem;
+}
+.lftline .fill{
+  color:var(--bs-primary);
+}
+
+section.banner-part{
+    background:#eaf2fb;
+}
+
+/* Basic table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+   td {
+    font-size: 0.65rem;
+}
+   th {
+    font-size: 0.75rem;
+}
+
+th, td {
+      border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    tr {
+      /* border: 1px solid #ccc; */
+      margin-bottom: 10px;
+    }
+    
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+    
+    td:nth-of-type(1):before {
+      content: "Name ";
+    }
+    
+    td:nth-of-type(2):before {
+      content: "Type ";
+    }
+    
+    td:nth-of-type(3):before {
+      content: "Rate ";
+    }
+    td:nth-of-type(4):before {
+      content: "Budget ";
+    }
+    
+    td:nth-of-type(5):before {
+      content: "Revenue ";
+    }
+    
+    td:nth-of-type(6):before {
+      content: "Estimated Impressions ";
+    }
+    td:nth-of-type(7):before {
+      content: "Impressions Served ";
+    }
+    
+    td:nth-of-type(8):before {
+      content: "CTR ";
+    }
+    
+    td:nth-of-type(9):before {
+      content: "Margin ";
+    }
+    td:nth-of-type(10):before {
+      content: "Margin Percentage ";
+    }
+    
+    td:nth-of-type(11):before {
+      content: "Flight ";
+    }
+    
+    td:nth-of-type(12):before {
+      content: "Name ";
+    }
+  }
+  
+  .fil{
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  .form-input{
+    border: 1px solid #cccccc;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.35rem;
+    width: 100%;
+  }
+  .form-input::placeholder{
+   color:#ccc;
+   font-size: 0.875rem;
+   width:100%;
+  }
+  .dropdown-toggle{
+    background:transparent;
+    border: 1px solid #cccccc;
+  }
+  .pegination{
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+  }
+  .pegination .dropdown{
+    background: transparent;
+    border: 1px solid #cccccc;
+    border-radius: 0.35rem;
+    font-size: 0.875rem;
+    color:#818181;
+  }
+  .pegination span{
+   font-size: 0.75rem;
+   color:#818181;
+  }
+  .rgtline{
+    display: flex;
+    gap: 0.5rem;
+  }
+  input[type=date]{
+    border-radius: 0.5rem !important;
+    border: 1px solid #ccc !important;
+    font-size: 0.875rem !important;
+    color: #837f7f !important;
+    padding: 0 0.5rem !important;
+  }
+
+  .pichart .apexcharts-canvas{
+    height:100% !important;
+  }
+  a svg{
+    color:#818181;
+    width:12px;
+  }
+  .pegination .dropdown-toggle,.pegination .dropdown{
+    border:0;
+  }
+
+  @media(max-width:767px){
+    .btn {
+      padding: 0.5rem 0.875rem;
+      font-size: 0.6rem;
+  }
+  .tophead h3 {
+    font-size: 1.15rem;
+  }
+  .tophead p {
+    font-size: 0.775rem;
+  }
+  input[type=date] {
+   font-size: 0.75rem !important;
+  }
+  .nav-item {
+    padding: 1rem 0.5rem;
+  }
+  .btmbox.bdrn{
+    border:0;
+    padding: 1rem 1.25rem;
+  }
+  }
